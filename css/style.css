@@ -1,126 +1,153 @@
 /* Estilos generales */
 * {
-    margin: 0;  
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #122527;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: .5rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li {
+  margin: 0 1.5rem;
+  padding-top: .6rem;
+}
+#icon{
+  filter: invert(1);
+}
+
+nav a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+} 
+nav a:hover {
+  transition: color 0.5s ease-in-out;
+  color: #f88222;
+  transition-delay: 0.5;
+  text-decoration: underline;
+}
+nav a:not(:hover){
+  transition: color 0.5s ease-in-out;
+  color: #fff;
+  transition-delay: 0.5;
+}
+
+.contenedor-img-main{
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
   
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+}
+.imagen-main{
+  flex: 7;
+  width: 100%;
+  height: 93vh;
+}
+.texto-main{
+  flex: 2;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #122527;
+  color: white;
+  font-size: 35px;
+  padding-top: 15%;
+}
+.titulo:hover > h2{
+  color: #f88222;
+  transition: color 0.8s ease;
+}
+.titulo:not(:hover) > h2{
+  color: #fff;
+  transition: color 0.8s ease;
+}
+.contenedor-sobremi{
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+}
+.img-sobremi{
+  flex: 5;
+  width: 500px;
+  height: 500px;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.8s ease;
+}
+.img-sobremi > p{
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.img-sobremi > p:hover{
+  animation: distorsion 0.5s ease-in-out infinite;
+}
+.img-sobremi >p:not(:hover){
+  animation: restablecer 1.5s ease-out forwards;
+}
+.texto-sobremi{
+  flex:5;
+}
+
+
+
+@keyframes distorsion {
+  0% {
+    transform: skewX(0deg);
   }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
+  50% {
+    transform: skewX(20deg);
   }
-  
-  /* Estilos de la barra de navegación */
-  header {
-    background-color: #fff;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  100% {
+    transform: skewX(0deg);
   }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+}
+@keyframes restablecer {
+  0% {
+    transform: skewX(0deg);
   }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
+  50% {
+    transform: skewX(20deg);
   }
-  
-  nav li {
-    margin: 0 1rem;
+  100% {
+    transform: skewX(0deg);
   }
-  
-  nav a {
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  nav a:hover {
-    color: #f88222;
-    text-decoration: underline;
-  }
-  
-  /* Estilos de la sección de inicio */
-  .inicio {
-    display: flex;
+}
+
+@media (max-width: 768px) {
+  .contenedor-img-main {
+    display: block;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #333;
   }
-  
-  .inicio h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: #fff;
+  .imagen-main{
+    display: none;
   }
-  .inicio h1:hover {
-    transition: color 0.8s ease;
-    color: #f88222;
+  .texto-main{
+    padding: 10% 10%;
   }
-  .inicio h1:not(:hover){
-    transition: color 0.8s ease;
-    color: #fff;
+  .text-auxiliar{
+    display: none;
   }
-  .inicio p {
-    font-size: 1.2rem;
+  .img-sobremi{
+    width: 300px;
+    height: 300px;
   }
-  #texto-frase{
-    color: #f88222;
+  .texto-sobremi{
+
   }
- 
-  
-  .grid-container {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-  }
-  
-  .grid-item {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .grid-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .grid-item:hover img {
-    transform: scale(1.1);
-  }
-  
-  .caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    width: 100%;
-    padding: 1rem;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-  }
-  
-  .grid-item:hover .caption {
-    transform: translateY(0);
-  }
+}
