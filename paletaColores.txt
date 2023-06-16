@@ -1,0 +1,16 @@
+
+  /* CSS HEX */
+--dim-gray: #7a7265ff;
+--silver: #c0b7b1ff;
+--raw-umber: #8e6e53ff;
+--lion: #c69c72ff;
+--jet: #433e3fff;
+
+
+
+/* CSS HEX */
+--saffron: #f3c969ff;
+--mindaro: #edff86ff;
+--vanilla: #fff5b2ff;
+--tea-green: #d4fcc3ff;
+--van-dyke: #362c28ff;
