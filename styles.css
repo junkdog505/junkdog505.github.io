@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,12 +31,14 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(52, 46, 55, 0.5);
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(15px);
   }
+  
   
   nav .logo img {
     height: 50px;
@@ -47,6 +50,7 @@ body {
     padding: 0;
     display: flex;
   }
+  
   
   nav ul li {
     margin-right: 10px;
@@ -61,12 +65,12 @@ body {
     margin-top: 50px;
   }
   
-  .hero-text h1 {
-    font-size: 1000px;
+  .hero-text-t {
+    font-size: 100px;
   }
   
-  .hero-text p {
-    font-size: 24px;
+  .hero-text-p {
+    font-size: 25px;
   }
   
   main {
