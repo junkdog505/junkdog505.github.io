@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de inicio de sesión</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/styles/register.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center min-vh-100 blur-background">
+      <div class="col-md-4">
+        <div class="card transparent-card">
+          <div class="card-body">
+            <h5 class="card-title">Registro</h5>
+            <form>
+              <div class="formulario row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Nombres<span>*</span></label>
+                    <input type="text" class="form-control transparent-card" id="name" placeholder="Ingrese sus nombres">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname">Apellidos<span>*</span></label>
+                    <input type="text" class="form-control transparent-card" id="lastname" placeholder="Ingrese sus apellidos">
+                  </div>
+                  <div class="form-group">
+                    <label for="age">Edad<span>*</span></label>
+                    <input type="number" class="form-control transparent-card" id="age" placeholder="Ingrese su edad">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Correo Electrónico<span>*</span></label>
+                    <input type="email" class="form-control transparent-card" id="email" placeholder="Ingrese un correo">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Celular<span>*</span></label>
+                    <input type="number" class="form-control transparent-card" id="phone" placeholder="Ingrese su número de celular">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="address">Domicilio<span>*</span></label>
+                    <input type="text" class="form-control transparent-card" id="address" placeholder="Ingrese su ubicación domiciliaria">
+                  </div>
+                  <div class="form-group">
+                    <label for="school">Centro de Estudios<span>*</span></label>
+                    <input type="text" class="form-control transparent-card" id="school" placeholder="Ingrese su centro educativo">
+                  </div>
+                  <div class="form-group">
+                    <label for="profession">Profesión<span>*</span></label>
+                    <input type="text" class="form-control transparent-card" id="profession" placeholder="Ingrese su profesión">
+                  </div>
+                  <div class="form-group">
+                    <label for="username">Usuario<span>*</span></label>
+                    <input type="text" class="form-control transparent-card" id="username" placeholder="Ingrese un nombre de usuario">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Contraseña<span>*</span></label>
+                    <input type="password" class="form-control transparent-card" id="password" placeholder="Ingresa una contraseña">
+                  </div>
+                </div>
+              </div>
+              <div class="right-content">
+                <p>¿No tiene una cuenta? <a class="btn-link">Registrarse</a></p>                
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn">Iniciar sesión</button>
+              </div>
+            </form>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
