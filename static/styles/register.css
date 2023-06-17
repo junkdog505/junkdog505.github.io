@@ -9,7 +9,7 @@
       backdrop-filter: blur(15px);
       -webkit-backdrop-filter: blur(15px);
       border: None;
-      color: #fff;
+
     }
   .transparent-card:focus {
       background-color: rgba(52, 46, 55, 0.5);

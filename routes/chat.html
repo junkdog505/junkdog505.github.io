@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/styles/chat.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 mt-5">
+        <div class="chats">
+            <h1>Chats</h1>
+          <div class="chat active">
+            <div class="name">Empresa 1</div>
+            <div class="preview">Último mensaje de Empresa 1</div>
+            <div class="time">10:50 AM</div>
+          </div>
+          <div class="chat">
+            <div class="name">Empresa 2</div>
+            <div class="preview">Último mensaje de Empresa 2</div>
+            <div class="time">09:45 AM</div>
+          </div>
+          <div class="chat">
+            <div class="name">Empresa 3</div>
+            <div class="preview">Último mensaje de Empresa 3</div>
+            <div class="time">08:15 AM</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 mt-5">
+        <div class="messages">
+          <div class="message sent">
+            <h1>Empresa 1</h1>
+            <div class="content">
+              <div class="sender">Tú</div>
+              <div class="text">Hola, buenos días.</div>
+              <div class="time">10:35 AM</div>
+            </div>
+          </div>
+          <div class="message received">
+            <div class="content">
+              <div class="sender">Empresa 1</div>
+              <div class="text">¡Hola! un gusto conocerte.</div>
+              <div class="time">10:40 AM</div>
+            </div>
+          </div>
+          <div class="message sent">
+            <div class="content">
+              <div class="sender">Tú</div>
+              <div class="text">Me alegro. Estoy interesado en su oferta de trabajo, estoy buscando chamba.</div>
+              <div class="time">10:45 AM</div>
+            </div>
+          </div>
+          <div class="message received">
+            <div class="content">
+              <div class="sender">Empresa 1</div>
+              <div class="text">Me parece perfecto, agendemos una cita.</div>
+              <div class="time">10:50 AM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

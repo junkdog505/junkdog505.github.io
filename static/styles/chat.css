@@ -1,0 +1,83 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #2C2C34;
+  }
+  
+  .chats {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .chat {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .chat.active {
+    background-color: #ddd;
+  }
+  
+  .chat .name {
+    font-weight: bold;
+  }
+  
+  .chat .preview {
+    color: #888;
+  }
+  
+  .chat .time {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .messages {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message.sent .content {
+    background-color: #d2ffc7;
+    text-align: right;
+  }
+  
+  .message.received .content {
+    background-color: #f1f1f1;
+    text-align: left;
+  }
+  
+  .message .content {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .message .time {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .message .sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .message .text {
+    word-wrap: break-word;
+  }
+  
