@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de inicio de sesión</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/styles/register.css">
+  <link rel="stylesheet" href="/static/styles/registerE.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
@@ -18,43 +18,35 @@
       <div class="col-md-4">
         <div class="card transparent-card">
           <div class="card-body">
-            <h5 class="card-title">Registro</h5>
+            <h5 class="card-title">Registro de Empresa</h5>
             <form>
               <div class="formulario row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="name">Nombres<span>*</span></label>
-                    <input type="text" class="form-control transparent-card" id="name" placeholder="Ingrese sus nombres">
+                    <label for="name">Nombre de la Empresa<span>*</span></label>
+                    <input type="text" class="form-control transparent-card" id="name" placeholder="Ingrese nombre de la empresa">
                   </div>
                   <div class="form-group">
-                    <label for="lastname">Apellidos<span>*</span></label>
-                    <input type="text" class="form-control transparent-card" id="lastname" placeholder="Ingrese sus apellidos">
+                    <label for="lastname">Rubro<span>*</span></label>
+                    <input type="text" class="form-control transparent-card" id="lastname" placeholder="Ingrese su rubro">
                   </div>
                   <div class="form-group">
-                    <label for="age">Edad<span>*</span></label>
-                    <input type="number" class="form-control transparent-card" id="age" placeholder="Ingrese su edad">
+                    <label for="age">Año de Creación<span>*</span></label>
+                    <input type="number" class="form-control transparent-card" id="age" placeholder="Ingrese su antiguedad">
                   </div>
                   <div class="form-group">
                     <label for="email">Correo Electrónico<span>*</span></label>
                     <input type="email" class="form-control transparent-card" id="email" placeholder="Ingrese un correo">
                   </div>
-                  <div class="form-group">
-                    <label for="phone">Celular<span>*</span></label>
-                    <input type="number" class="form-control transparent-card" id="phone" placeholder="Ingrese su número de celular">
-                  </div>
                 </div>
                 <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="phone">Celular<span>*</span></label>
+                        <input type="number" class="form-control transparent-card" id="phone" placeholder="Ingrese su número de celular">
+                    </div>
                   <div class="form-group">
                     <label for="address">Domicilio<span>*</span></label>
                     <input type="text" class="form-control transparent-card" id="address" placeholder="Ingrese su ubicación domiciliaria">
-                  </div>
-                  <div class="form-group">
-                    <label for="school">Centro de Estudios<span>*</span></label>
-                    <input type="text" class="form-control transparent-card" id="school" placeholder="Ingrese su centro educativo">
-                  </div>
-                  <div class="form-group">
-                    <label for="profession">Profesión<span>*</span></label>
-                    <input type="text" class="form-control transparent-card" id="profession" placeholder="Ingrese su profesión">
                   </div>
                   <div class="form-group">
                     <label for="username">Usuario<span>*</span></label>
@@ -67,9 +59,8 @@
                 </div>
               </div>
               <div class="right-content">    
-                <p>¿Es una empresa? <a href="/routes/registerE.html"> Registrar Empresa</a></p>
+                <button type="submit" class="btn">Registrar</button>       
               </div>
-              <button type="submit" class="btn">Registrar</button>  
               </div>
             </form>            
           </div>
