@@ -51,7 +51,6 @@ nav ul {
   padding: 0;
   display: flex;
 }
-
 nav ul li {
   margin-right: 10px;
 }
@@ -60,6 +59,10 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   padding-right: 25px;
+}
+nav ul li a:hover{
+  color:#B18FCF;
+  text-decoration: underline;
 }
 
 .hero-text {

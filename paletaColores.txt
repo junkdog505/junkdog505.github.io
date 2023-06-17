@@ -14,3 +14,18 @@
 --vanilla: #fff5b2ff;
 --tea-green: #d4fcc3ff;
 --van-dyke: #362c28ff;
+
+
+/* SCSS HEX */
+$raisin-black: #202030ff;
+$english-violet: #39304aff;
+$walnut-brown: #635c51ff;
+$battleship-gray: #7d7461ff;
+$khaki: #b0a990ff;
+
+/* SCSS RGB */
+$raisin-black: rgba(32, 32, 48, 1);
+$english-violet: rgba(57, 48, 74, 1);
+$walnut-brown: rgba(99, 92, 81, 1);
+$battleship-gray: rgba(125, 116, 97, 1);
+$khaki: rgba(176, 169, 144, 1);
